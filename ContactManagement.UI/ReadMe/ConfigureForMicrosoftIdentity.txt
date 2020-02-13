@@ -1,0 +1,10 @@
+﻿-- Steps
+1. Go to Portal.Azure.Com and find a way to do "App Registration"
+2. In this case App Name : "ContactManagement"
+3. Setup RedirectUrl : http://localhost:40507/singin-oidc
+4. Setup LogoutURL : http://localhost:40507/singout-oidc
+5. Implicit Grant : Choose "ID Tokens"
+6. Retrieve the "ClientId" & "ClientSectrets" into the secrets.json file.
+7. "AuthenticationScheme": {
+    "Scheme": "MicrosoftIdentity"
+  }, -- Possible values MicrosoftIdentity, InDBStore
