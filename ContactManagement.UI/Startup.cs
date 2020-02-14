@@ -19,6 +19,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Http;
+using AutoMapper;
 
 namespace ContactManagement.UI
 {
@@ -49,8 +50,12 @@ namespace ContactManagement.UI
             services.AddDbContext<ContactManagementDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString(connectionstringName)));
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ContactManagementDbContext>();
+
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddControllersWithViews();
             services.AddRazorPages();
 

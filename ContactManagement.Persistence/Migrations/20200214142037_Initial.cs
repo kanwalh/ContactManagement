@@ -167,6 +167,50 @@ namespace ContactManagement.Persistence.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ContactEmails",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Type = table.Column<int>(nullable: false),
+                    Email = table.Column<string>(nullable: true),
+                    CustomName = table.Column<string>(nullable: true),
+                    ContactId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ContactEmails", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ContactEmails_Contacts_ContactId",
+                        column: x => x.ContactId,
+                        principalTable: "Contacts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ContactPhones",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Type = table.Column<int>(nullable: false),
+                    Phone = table.Column<string>(nullable: true),
+                    CustomName = table.Column<string>(nullable: true),
+                    ContactId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ContactPhones", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ContactPhones_Contacts_ContactId",
+                        column: x => x.ContactId,
+                        principalTable: "Contacts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -205,6 +249,16 @@ namespace ContactManagement.Persistence.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ContactEmails_ContactId",
+                table: "ContactEmails",
+                column: "ContactId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ContactPhones_ContactId",
+                table: "ContactPhones",
+                column: "ContactId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -225,13 +279,19 @@ namespace ContactManagement.Persistence.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Contacts");
+                name: "ContactEmails");
+
+            migrationBuilder.DropTable(
+                name: "ContactPhones");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Contacts");
         }
     }
 }

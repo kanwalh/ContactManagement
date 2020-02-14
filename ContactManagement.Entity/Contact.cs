@@ -17,5 +17,9 @@ namespace ContactManagement.Entity
 
         [MaxLength(50)]
         public string LastName { get; set; }
+
+        public List<ContactEmail> Emails { get; set; }
+
+        public List<ContactPhone> Phone { get; set; }
     }
 }

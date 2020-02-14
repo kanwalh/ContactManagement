@@ -1,0 +1,13 @@
+*.suo
+*.cache
+/.vs/	
+/.vs/ContactManagement/v16/
+/ContactManagement.Entity/bin/Debug/
+/ContactManagement.Entity/obj/Debug/
+/ContactManagement.Persistence/bin/Debug/
+/ContactManagement.Persistence/obj/Debug/
+/ContactManagement.UI/bin/
+/ContactManagement.UI/obj/
+/ContactManagement.UI/obj/Debug/
+/ContactManagement.Services/bin/
+/ContactManagement.Services/obj/Debug/
