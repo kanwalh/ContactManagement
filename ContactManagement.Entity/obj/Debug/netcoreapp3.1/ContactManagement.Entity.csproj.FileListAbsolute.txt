@@ -6,14 +6,6 @@ C:\Users\KanwalH\OneDrive\Work\myExamples\ContactManagement\ContactManagement.En
 C:\Users\KanwalH\OneDrive\Work\myExamples\ContactManagement\ContactManagement.Entity\obj\Debug\netcoreapp3.1\ContactManagement.Entity.AssemblyInfo.cs
 C:\Users\KanwalH\OneDrive\Work\myExamples\ContactManagement\ContactManagement.Entity\obj\Debug\netcoreapp3.1\ContactManagement.Entity.dll
 C:\Users\KanwalH\OneDrive\Work\myExamples\ContactManagement\ContactManagement.Entity\obj\Debug\netcoreapp3.1\ContactManagement.Entity.pdb
-E:\myExamples\ContactManagement\ContactManagement.Entity\bin\Debug\netcoreapp3.1\ContactManagement.Entity.deps.json
-E:\myExamples\ContactManagement\ContactManagement.Entity\bin\Debug\netcoreapp3.1\ContactManagement.Entity.dll
-E:\myExamples\ContactManagement\ContactManagement.Entity\bin\Debug\netcoreapp3.1\ContactManagement.Entity.pdb
-E:\myExamples\ContactManagement\ContactManagement.Entity\obj\Debug\netcoreapp3.1\ContactManagement.Entity.csprojAssemblyReference.cache
-E:\myExamples\ContactManagement\ContactManagement.Entity\obj\Debug\netcoreapp3.1\ContactManagement.Entity.AssemblyInfoInputs.cache
-E:\myExamples\ContactManagement\ContactManagement.Entity\obj\Debug\netcoreapp3.1\ContactManagement.Entity.AssemblyInfo.cs
-E:\myExamples\ContactManagement\ContactManagement.Entity\obj\Debug\netcoreapp3.1\ContactManagement.Entity.dll
-E:\myExamples\ContactManagement\ContactManagement.Entity\obj\Debug\netcoreapp3.1\ContactManagement.Entity.pdb
 D:\myExamples\ContactManagement\ContactManagement.Entity\bin\Debug\netcoreapp3.1\ContactManagement.Entity.deps.json
 D:\myExamples\ContactManagement\ContactManagement.Entity\bin\Debug\netcoreapp3.1\ContactManagement.Entity.dll
 D:\myExamples\ContactManagement\ContactManagement.Entity\bin\Debug\netcoreapp3.1\ContactManagement.Entity.pdb

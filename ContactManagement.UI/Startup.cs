@@ -46,11 +46,11 @@ namespace ContactManagement.UI
                     break;
             }
 
-            services.AddDbContext<ContactManagementDbContextcs>(options =>
+            services.AddDbContext<ContactManagementDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString(connectionstringName)));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ContactManagementDbContextcs>();
+                .AddEntityFrameworkStores<ContactManagementDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
 

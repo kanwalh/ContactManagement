@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ContactManagement.Persistence.Migrations
 {
-    [DbContext(typeof(ContactManagementDbContextcs))]
+    [DbContext(typeof(ContactManagementDbContext))]
     [Migration("20200212062234_Initial")]
     partial class Initial
     {
